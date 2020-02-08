@@ -1,0 +1,27 @@
+My associate id:
+845062
+
+Other team members:
+845059,845061,845060,945113
+
+Team lead:
+845059
+My Role in team:
+1. To develop contact us page and place order page.
+2. Perform integration
+
+My development files:
+1.Contact.html
+2.PlaceOrder.html
+
+I was strong in:
+1. HTML-5
+2. CSS 3
+3. Bootstrap 4
+4. Documentation
+
+I was weak in:
+1. Javascript Validation
+
+Feedback: Hackathon helped me brush my web development skills.
+
