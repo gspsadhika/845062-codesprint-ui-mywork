@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Card</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        h2{
+            padding-top: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            color: darkolivegreen;
+            
+        }
+        .field-form{
+            border:2px solid black;
+            padding:2rem;
+            margin:1rem;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container-fluid">
+            <h2>Place your order</h2>
+            <div class="form-row">
+                <label class="form-label">Gift Card Amount: </label>
+                <div class="form-group">
+                    <input type="number" class="form-control mb-1" size="5" id="amountINR" placeholder="Rupees"
+                    name="amountINR" required><br>
+                    <label for="amountINR">INR</label>
+                </div>:
+                <div class="form-group">
+                    <input type="number" min="0" max="100" class="form-control" size="5" id="amountPaise" placeholder="Paise"
+                    name="amountPaise" required><br>
+                    <label for="amountPaise">Paise</label>
+                </div>                             
+            </div>
+            <div class="form-row">
+                <label class="form-label">Recipient Name: </label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="rFirstName" placeholder=""
+                    name="amountINR" required><br>
+                    <label for="amountINR">First Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="rLastName" placeholder=""
+                    name="amountPaise" required><br>
+                    <label for="amountPaise">Last Name</label>
+                </div>                             
+            </div>
+            
+            <div class="form-group">
+                <div >
+                <fieldset class= "field-form">
+                    <legend>
+                        Shipping Address
+                    </legend>
+                    <input type="text" class="form-control" id="streetAddress" placeholder="Enter your address" name="addr" required><br>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Enter City" id="city" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Enter State" id="state" required>
+                        </div><br>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <select class="custom-select" id="country">
+                                <option selected>Country</option>
+                                <option value="one">India</option>
+                                <option value="Two">Australia</option>
+                                <option value="three">New Zealand</option>
+                              </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Enter Pincode" id="pincode">
+                    </div>
+                </fieldset>
+            </div>
+            </div>
+            <div class="form-group">                
+                <label for="name" class="form-label"> Buyer's Name: </label>    
+                <div class= "row">
+                    <div class="col">            
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number </b></label>
+                <input type="text" size="2" value="+91" readonly="readonly" id="phoneNumCode"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit1" required/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit2"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit3"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit4"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit5"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit6"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit7"/>&nbsp;
+                <input type="text" size="1"maxlength="1"  id="phoneNumDigit8"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit9"/>&nbsp;
+                <input type="text" size="1" maxlength="1" id="phoneNumDigit10"/>&nbsp;<br />              
+        </div>
+        <div class="form-group">
+            <label for="email"class="form-label">Email</label>
+            <input type="text" class="form-control" placeholder="Email" name="email" id="email" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+        
+</body>
+</html>
